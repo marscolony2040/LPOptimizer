@@ -70,7 +70,7 @@ class Home(tk.Tk):
         self.mm = self.entry['Min or Max'].get()
         
         sub = tk.Toplevel(self, bg=self.bg)
-        sub.geometry(f'{320 + self.vars*100}x{self.cons*75}')
+        sub.geometry(f'{320 + self.vars*100}x{100 + self.cons*100}')
 
         tk.Label(sub, text='\t', bg=self.bg, fg=self.fg).grid(row=1, column=1)
         tk.Label(sub, text='\t', bg=self.bg, fg=self.fg).grid(row=2, column=1)
